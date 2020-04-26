@@ -1,0 +1,58 @@
+﻿{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="note-detail">
+  <div class="panel panel-default note-detail__panel">
+    <div class="panel-heading note-detail__panel-header">
+      <h1 class="panel-title note-detail__panel-title">
+        {{note.subject}}
+      </h1>
+    </div>
+    <div class="panel-body">
+      <div class="note-detail__date-section">
+        <div>
+          <span class="note-detail__created-date-key">
+            Created On:
+          </span>
+          <span class="note-detail__created-date-value">
+            {{note.created_date}}
+          </span>
+        </div>
+        <div>
+          <span class="note-detail__modified-date-key">
+            Last Modified On:
+          </span>
+          <span class="note-detail__modified-date-value">
+            {{note.last_modified}}
+          </span>
+        </div>
+      </div>
+      <hr/>
+      <div>
+        {{note.detail|linebreaksbr}}
+      </div>
+    </div>
+    <div class="panel-footer note-detail__footer">
+      <div class="note-detail__flex-container">
+        <div>
+          <a class="note-detail__button" href="{% url 'home' %}">
+            Back to List
+          </a>
+        </div>
+        <div>
+          <a class="note-detail__button" href="{% url 'edit_note' pk=note.id %}" >
+            Edit Note
+          </a>
+        </div>
+        <div>
+          <a class="note-detail__button" href="{% url 'delete_note' pk=note.id %}" >
+            Delete Note
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

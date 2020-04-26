@@ -1,0 +1,39 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<div class="index">
+  {% if notes %}
+      <div class="panel panel-default index__header">
+        <h3 class="panel-body">
+          Your Notes
+        </h3>
+      </div>
+  
+      {% for note in notes %}
+
+      <div class="panel panel-default">
+        <a href = "{% url 'note_detail' pk=note.id %}"  class="index__list-item-link">
+          <div class="panel-body">
+            {{note.subject}}
+          </div>
+        </a>
+      </div>
+
+      {% endfor %}
+
+  {% else %}
+      <div class="panel panel-default index__empty-list">
+        <h3 class="panel-body">
+          You don't have any notes. Click on the button below to create a note.
+        </h3>
+      </div>
+  {% endif %}
+
+  <div class="index__new-note-button-wrapper">
+    <a href="{% url 'create_note' %}" class="index__new-note-button">New Note</a>
+  </div>
+</div>
+
+
+{% endblock %}

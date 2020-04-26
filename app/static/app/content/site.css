@@ -1,0 +1,239 @@
+body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+
+
+/* Index Page */
+
+.index {
+    margin-top: 60px;
+    padding: 120px;
+}
+
+.index__header {
+    text-align: center;
+    background-color: #EEEEEE;
+    color: #008080;
+    border-radius: 0px;
+}
+
+.index__list-item {
+    border-radius: 0px;
+}
+
+
+.index__list-item-link {
+    color: #262626;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.index__empty-list {
+    text-align: center;
+    background-color: #EEEEEE;
+    color: #008080;
+    border-radius: 0px;
+}
+
+.index__new-note-button-wrapper {
+    text-align: right;
+    margin-top: 35px;
+}
+
+.index__new-note-button {
+    background-color: #008080;
+    padding: 12px 25px 12px 25px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+}
+
+    .index__new-note-button:hover {
+        background-color: #008080;
+        padding: 12px 25px 12px 25px;
+        font-size: 16px;
+        font-weight: 500;
+        color: white;
+        text-decoration: underline;
+        text-decoration-color: azure;
+    }
+
+
+
+/* Note Detail Page */
+.note-detail {
+    margin-top: 60px;
+    padding: 120px;
+}
+
+.note-detail__panel {
+    border-radius: 0px;
+}
+
+.note-detail__panel-header {
+    padding: 25px 15px 25px 15px;
+}
+
+.note-detail__panel-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: darkslategray;
+}
+
+.note-detail__date-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-detail__created-date-key {
+    font-weight: 500;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.note-detail__created-date-value {
+    font-weight: 500;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+.note-detail__modified-date-key {
+    font-weight: 500;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.note-detail__modified-date-value {
+    font-weight: 500;
+    font-size: 14px;
+    color: darkslategray;
+}
+
+.note-detail__footer {
+    padding: 25px 15px 25px 15px;
+}
+
+.note-detail__flex-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.note-detail__button {
+    padding: 10px 25px 10px 25px;
+    background-color: #008080;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+    .note-detail__button:hover {
+        padding: 10px 25px 10px 25px;
+        background-color: #008080;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-color: azure;
+    }
+
+
+
+/* Note Editor Page */
+.note-editor {
+    margin-top: 60px;
+    padding: 120px;
+}
+
+.note-editor__panel {
+    border-radius: 0px;
+}
+
+.note-editor__header {
+    padding: 25px 15px 25px 15px;
+}
+
+.note-editor__panel-title {
+    font-weight: 500;
+    font-size: 18px;
+    color: darkslategray;
+    text-align: center;
+}
+
+.note-editor__panel-body {
+    padding: 40px 50px 20px 50px;
+}
+
+.note-editor__input-label {
+    font-weight: 500;
+    font-size: 16px;
+    color: darkslategray;
+}
+
+.note-editor__subject-input {
+    border-radius: 0px;
+    height: 40px;
+}
+
+.note-editor__detail-input {
+    border-radius: 0px;
+}
+
+.note-editor__flex-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 12px 10px 12px 10px;
+}
+
+.note-editor__button {
+    border-radius: 0px;
+    padding: 5px 25px 5px 25px;
+    background-color: #008080;
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+    .note-editor__button:hover {
+        border-radius: 0px;
+        padding: 5px 25px 5px 25px;
+        background-color: #008080;
+        color: white;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline;
+        text-decoration-color: azure;
+    }
