@@ -25,7 +25,7 @@ SECRET_KEY = 'x3&(1vet$_c)lf9ws^kzl*%mik_)v3b2@3$lfc@73h10%&j%qx'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','notelyweb.herokuapp.com']
 
 
 # Application definition
@@ -120,3 +120,5 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.0/howto/static-files/
 
 STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+STATICFILES = [os.path.join(BASE_DIR, 'static')]
